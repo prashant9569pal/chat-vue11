@@ -143,26 +143,26 @@ export default {
         .login-form {
             display: block;
             width: 100%;
-            padding: 15px;
+            padding: 30px; // Increased padding
             
             .form-inner {
                 display: block;
-                background-color: #e6f0ff; // light bluish background
-                padding: 50px 15px;
-                border-radius: 16px;
-                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                background-color: #f0f6ff; // Lighter bluish background
+                padding: 40px; // Increased padding
+                border-radius: 20px; // Smoother border
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); // Softer shadow
 
                 h1 {
-                    color: #4876b8; // darker bluish text
-                    font-size: 28px;
-                    margin-bottom: 30px;
+                    color: #3a639e; // Slightly darker bluish text
+                    font-size: 32px; // Larger font size
+                    margin-bottom: 40px; // Increased margin
                 }
 
                 label {
                     display: block;
-                    margin-bottom: 5px;
-                    color: #4876b8; // darker bluish text
-                    font-size: 16px;
+                    margin-bottom: 10px; // Increased margin
+                    color: #3a639e; // Slightly darker bluish text
+                    font-size: 18px; // Increased font size
                     transition: 0.4s;
                 }
 
@@ -174,20 +174,20 @@ export default {
 
                     display: block;
                     width: 100%;
-                    padding: 10px 15px;
-                    border-radius: 8px;
-                    margin-bottom: 15px;
+                    padding: 15px;
+                    border-radius: 10px; // Smoother border
+                    margin-bottom: 20px; // Increased margin
                     
-                    color: #3a639e; // bluish text
-                    font-size: 18px;
+                    color: #3a639e; // Bluish text
+                    font-size: 20px; // Increased font size
 
-                    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-                    background-color: #d8e6ff; // lighter bluish background
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Softer shadow
+                    background-color: #e6f0ff; // Light bluish background
 
                     transition: 0.4s;
 
                     &::placeholder {
-                        color: #7ba4e0; // light bluish placeholder
+                        color: #7ba4e0; // Light bluish placeholder
                         transition: 0.4s;
                     }
                 }
@@ -200,26 +200,28 @@ export default {
 
                     display: block;
                     width: 100%;
-                    padding: 10px 15px;
-                    background-color: #5b8ac7; // bluish button
-                    border-radius: 8px;
+                    padding: 15px;
+                    background-color: #3a639e; // Slightly darker bluish button
+                    border-radius: 10px; // Smoother border
 
-                    color: #fff; // white text
-                    font-size: 18px;
+                    color: #fff; // White text
+                    font-size: 20px; // Increased font size
                     font-weight: 700;
+                    cursor: pointer; // Cursor pointer on hover
+                    transition: background-color 0.4s;
                 }
 
                 &:focus-within {
                     label {
-                        color: #5b8ac7; // bluish text
+                        color: #5b8ac7; // Bluish text
                     }
 
                     input[type="text"] {
-                        background-color: #e6f0ff; // light bluish background
-                        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+                        background-color: #f0f6ff; // Lighter bluish background
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); // Softer shadow
 
                         &::placeholder {
-                            color: #7ba4e0; // light bluish placeholder
+                            color: #7ba4e0; // Light bluish placeholder
                         }
                     }
                 }
@@ -234,73 +236,74 @@ export default {
             position: relative;
             display: block;
             width: 100%;
-            padding: 50px 30px 10px;
+            padding: 40px 30px 20px; // Increased padding
 
             .logout {
                 position: absolute;
-                top: 15px;
-                right: 15px;
+                top: 20px; // Adjusted position
+                right: 20px; // Adjusted position
                 appearance: none;
                 border: none;
                 outline: none;
                 background: none;
                 
-                color: #fff; // white text
-                font-size: 18px;
-                margin-bottom: 10px;
+                color: #fff; // White text
+                font-size: 20px; // Increased font size
                 text-align: right;
+                cursor: pointer; // Cursor pointer on hover
+                transition: color 0.4s;
             }
 
             h1 {
-                color: #fff; // white text
+                color: #fff; // White text
+                font-size: 32px; // Increased font size
             }
         }
 
         .chat-box {
-            border-radius: 24px 24px 0px 0px;
-            background-color: #e6f0ff; // light bluish background
-            box-shadow: 0px 0px 12px rgba(100, 100, 100, 0.2);
+            border-radius: 20px 20px 0 0; // Smoother border
+            background-color: #f0f6ff; // Lighter bluish background
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); // Softer shadow
             flex: 1 1 100%;
-            padding: 30px;
+            padding: 40px; // Increased padding
 
             .message {
                 display: flex;
-                margin-bottom: 15px;
+                margin-bottom: 30px; // Increased margin
                 
                 .message-inner {
                     .username {
-                        color: #7ba4e0; // light bluish text
-                        font-size: 16px;
-                        margin-bottom: 5px;
-                        padding-left: 15px;
-                        padding-right: 15px;
+                        color: #7ba4e0; // Light bluish text
+                        font-size: 18px; // Increased font size
+                        margin-bottom: 10px; // Increased margin
+                        padding: 0 15px; // Adjusted padding
                     }
 
                     .content {
                         display: inline-block;
-                        padding: 10px 20px;
-                        background-color: #d8e6ff; // lighter bluish background
-                        border-radius: 999px;
+                        padding: 15px 25px; // Increased padding
+                        background-color: #d8e6ff; // Lighter bluish background
+                        border-radius: 20px; // Smoother border
 
-                        color: #3a639e; // bluish text
-                        font-size: 18px;
-                        line-height: 1.2em;
+                        color: #3a639e; // Bluish text
+                        font-size: 20px; // Increased font size
+                        line-height: 1.4em; // Increased line height
                         text-align: left;
                     }
                 }
 
                 &.current-user {
-                    margin-top: 30px;
+                    margin-top: 30px; // Increased margin
                     justify-content: flex-end;
                     text-align: right;
 
                     .message-inner {
-                        max-width: 75%;
+                        max-width: 70%; // Adjusted width
 
                         .content {
-                            color: #fff; // white text
+                            color: #fff; // White text
                             font-weight: 600;
-                            background-color: #5b8ac7; // bluish background
+                            background-color: #5b8ac7; // Bluish background
                         }
                     }
                 }
@@ -309,16 +312,16 @@ export default {
 
         footer {
             position: sticky;
-            bottom: 0px;
-            background-color: #e6f0ff; // light bluish background
-            padding: 30px;
-            box-shadow: 0px 0px 12px rgba(100, 100, 100, 0.2);
+            bottom: 0;
+            background-color: #f0f6ff; // Lighter bluish background
+            padding: 40px; // Increased padding
+            box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1); // Softer shadow
 
             form {
                 display: flex;
 
                 input[type="text"] {
-                    flex: 1 1 100%;
+                    flex: 1;
 
                     appearance: none;
                     border: none;
@@ -327,20 +330,19 @@ export default {
 
                     display: block;
                     width: 100%;
-                    padding: 10px 15px;
-                    border-radius: 8px 0px 0px 8px;
+                    padding: 15px;
+                    border-radius: 10px 0 0 10px; // Smoother border
                     
-                    color: #3a639e; // bluish text
-                    font-size: 18px;
+                    color: #3a639e; // Bluish text
+                    font-size: 20px; // Increased font size
 
-                    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-                    background-color: #d8e6ff; // lighter bluish background
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Softer shadow
+                    background-color: #e6f0ff; // Light bluish background
 
                     transition: 0.4s;
 
                     &::placeholder {
-                        color: #7ba4e0; // light bluish placeholder
-                        transition: 0.4s;
+                        color: #7ba4e0; // Light bluish placeholder
                     }
                 }
                 
@@ -351,14 +353,16 @@ export default {
                     background: none;
 
                     display: block;
-                    padding: 10px 15px;
-                    border-radius: 0px 8px 8px 0px;
+                    padding: 15px 25px; // Increased padding
+                    border-radius: 0 10px 10px 0; // Smoother border
 
-                    background-color: #5b8ac7; // bluish button
+                    background-color: #3a639e; // Slightly darker bluish button
 
-                    color: #fff; // white text
-                    font-size: 18px;
+                    color: #fff; // White text
+                    font-size: 20px; // Increased font size
                     font-weight: 700;
+                    cursor: pointer; // Cursor pointer on hover
+                    transition: background-color 0.4s;
                 }
             }
         }
